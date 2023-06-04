@@ -1,0 +1,6 @@
+-
+ name: update playbook
+ hosts: servers
+ tasks:
+  - name: update servers
+    command: sudo apt update

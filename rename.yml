@@ -1,0 +1,9 @@
+--- 
+  - name: this will install rename
+    hosts: servers
+    become: true
+    tasks:
+     - name: install rename
+       apt:
+        name: rename 
+       

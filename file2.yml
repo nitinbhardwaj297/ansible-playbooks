@@ -1,0 +1,9 @@
+---
+- hosts: servers
+  tasks:
+  - name: Creating a file with content
+    copy:
+      dest: "/home/ubuntu/file2.yml"
+      content: |
+        line 01
+        line 02

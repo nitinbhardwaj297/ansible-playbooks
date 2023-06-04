@@ -1,0 +1,10 @@
+---
+ - name: this will install nginx
+   hosts: servers
+   become: True 
+   tasks:
+    - name: nitin
+      apt:
+       name: nginx
+       state: present
+

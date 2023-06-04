@@ -1,0 +1,9 @@
+---
+ - name: this will install docker
+   hosts: servers
+   become: True
+   tasks: 
+    - name: docker install
+      apt: 
+       name: docker.io
+       state: running

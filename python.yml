@@ -1,0 +1,9 @@
+---  
+ - name: python installation
+   hosts: servers
+   become: True
+   tasks:
+    - name: python installation 3
+      apt:
+       name: python3
+       state: present
