@@ -1,9 +1,7 @@
 ---
-- name: tree install
-  hosts: servers
-  become: True
-  tasks:
-    - name: Install tree package
-      apt:
-        name: tree
-        state: present
+    - name: this will give tree to  system
+      hosts: servers
+      become: True
+      tasks:
+       - name: tree update
+         command: apt-get install tree -y

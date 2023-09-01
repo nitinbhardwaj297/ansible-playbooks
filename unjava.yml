@@ -1,0 +1,10 @@
+---
+- name: Uninstall JDK 17 using apt
+  hosts: servers
+  become: yes  # This will elevate the playbook's privileges to root
+
+  tasks:
+    - name: Remove JDK 17 package
+      apt:
+        name: openjdk-17-jdk  # Adjust the package name if needed
+        state: absent

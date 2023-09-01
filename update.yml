@@ -1,6 +1,7 @@
--
- name: update playbook
- hosts: servers
- tasks:
-  - name: update servers
-    command: sudo apt update
+---
+    - name: this will update system
+      hosts: servers
+      become: True
+      tasks:
+       - name: system update
+         command: apt update
